@@ -2,6 +2,7 @@
     --background: rgb(224, 234, 247);
     --header-background: white;
     --footer-background: rgb(243, 242, 242);
+
 }
 
 body {
@@ -10,6 +11,7 @@ body {
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr auto;
+    
 }
 
 header {
@@ -22,6 +24,8 @@ header {
 
 main {
     padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 footer {
@@ -33,3 +37,38 @@ footer {
     justify-content: flex-end;
     background-color: var(--footer-background);
 }
+
+#name-tag{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius:15px;
+}
+
+#greeting, #footer{
+    background-color: lightblue;
+    height: 80px;
+    padding: 25px;
+}
+
+#greeting {
+    border-radius: 15px 15px 0 0;
+}
+
+#footer {
+    border-radius: 0 0 15px 15px;
+}
+
+#name {
+    padding: 20px;
+}
+
+#interaction {
+    width: 400px;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    background: var(--background)
+}
+
